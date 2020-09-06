@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lib:project xmlns:lib="http://maven.apache.org/POM/4.0.0"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <lib:modelVersion>4.0.0</lib:modelVersion>
+
+
+    <lib:groupId>org.example</lib:groupId>
+    <lib:artifactId>MavenTest</lib:artifactId>
+    <lib:version>1.0</lib:version>
+
+
+    <lib:properties>
+        <lib:project.build.sourceEncoding></lib:project.build.sourceEncoding>
+        <lib:naven.compiler.source>1.0</lib:naven.compiler.source>
+        <lib:naven.compiler.target>1.0</lib:naven.compiler.target>
+    </lib:properties>
+
+    <lib:dependencies>
+        <lib:dependency>
+            <lib:groupId>junit</lib:groupId>
+            <lib:artifactId>junit</lib:artifactId>
+            <lib:version>4.12</lib:version>
+            <lib:scope>test</lib:scope>
+        </lib:dependency>
+        <lib:dependency>
+            <lib:groupId>org.junit.jupiter</lib:groupId>
+            <lib:artifactId>junit-jupiter</lib:artifactId>
+            <lib:version>RELEASE</lib:version>
+            <lib:scope>test</lib:scope>
+        </lib:dependency>
+        <lib:dependency>
+            <lib:groupId>org.junit.jupiter</lib:groupId>
+            <lib:artifactId>junit-jupiter</lib:artifactId>
+            <lib:version>RELEASE</lib:version>
+            <lib:scope>test</lib:scope>
+        </lib:dependency>
+
+    </lib:dependencies>
+
+
+    <lib:build>
+        <lib:plugins>
+            <lib:plugin>
+                <lib:groupId>org.apache.maven.plugins</lib:groupId>
+                <lib:artifactId>maven-jar-plugins</lib:artifactId>
+                <lib:version>2.3.0</lib:version>
+                <lib:configuration>
+                    <lib:archive>
+                        <lib:mainfest>
+                            <lib:addClasspath>true</lib:addClasspath>
+                            <lib:classpathPrefix>lib</lib:classpathPrefix>
+                            <lib:mainclas>Main</lib:mainclas>
+                        </lib:mainfest>
+                    </lib:archive>
+                </lib:configuration>
+            </lib:plugin>
+
+        </lib:plugins>
+
+
+    </lib:build>
+
+
+</lib:project>
